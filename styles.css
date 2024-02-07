@@ -1,3 +1,13 @@
 .fa-instagram{
-    font-size: 30px;
+    font-size: 60px;
+}
+
+.nav-pills .nav-link.active{
+background: white;
+color: blue;
+}
+.card-header{
+   display: flex;
+   justify-content: space-between;
+   font-weight: bold;
 }

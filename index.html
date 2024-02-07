@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <script src="https://kit.fontawesome.com/95620d9a0b.js" crossorigin="anonymous"></script>
   <title>Instagram Photo Feed With Bootstrap</title>
 </head>
@@ -15,9 +16,9 @@
 <body>
   <div class="container-fluid">
     <div class="row bg-light">
-      <div class="col-2"><i class="fa-brands fa-instagram"></i></div>
-      <div class="col-7"></div>
-      <div class="col-3">
+      <div class="col-3 d-flex align-items-center"><i class="fa-brands fa-instagram"></i><span class="font-weight-bolder pl-1">Instagram</span></div>
+      <div class="col-6"></div>
+      <div class="col">
 
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#exampleModal">
@@ -55,37 +56,148 @@
         </div>
 
       </div>
-      <div class="col-1">
-        <div class="dropdown">
-          <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown">
-            <i class="fa-solid fa-gear"></i>
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Link 1</a>
-            <a class="dropdown-item" href="#">Link 2</a>
-            <a class="dropdown-item" href="#">Link 3</a>
-          </div>
+    </div>
+    <div class="col">
+      <div class="dropdown">
+        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-end">
+          <a class="dropdown-item" href="#">Profile</a>
+          <a class="dropdown-item" href="#">Accessibility </a>
+          <a class="dropdown-item" href="#">Privacy and Data</a>
+          <a class="dropdown-item text-danger" href="#">Logout</a>
         </div>
-
       </div>
     </div>
-
   </div>
-  <div class="row">
-    <div class="col-4"></div>
-    <div class="col-3">
-      <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <button class="nav-link active" id="nav-home-tab" data-toggle="tab" data-target="#nav-home" type="button"
-            role="tab" aria-controls="nav-home" aria-selected="true"></button>
-          <button class="nav-link" id="nav-profile-tab" data-toggle="tab" data-target="#nav-profile" type="button"
-            role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+  <div class="row d-flex justify-content-center pt-2">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-toggle="pill" data-target="#pills-home" type="button"
+            role="tab" aria-controls="pills-home" aria-selected="true"><i class="bi bi-card-list"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-toggle="pill" data-target="#pills-profile" type="button"
+            role="tab" aria-controls="pills-profile" aria-selected="false"><i class="bi bi-grid-3x3-gap"></i></button>
+        </li>
+      </ul>
+      <div class="col-12 tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="row">
+            <div class="col d-flex justify-content-center p-3">
+              <div class="card" style="width: 40rem;">
+                <div class="card-header">
+                  <strong>Kansas City Chiefs are a Dynasty</strong>
+                  <span>4/12</span>
+                </div>
+                <img src="//i.ebayimg.com/images/g/OJ0AAOSw8dJeSx7x/s-l1200.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"><strong>204 Likes</strong></p>
+                  <p class="card-text">The Kansas City Chiefs will be playing in the superbowl vs the San Francisco 49ers. Patrick Mahomes is my favorite athlete of all time.</p>
+                </div>
+              </div>
+            </div>                
+          </div>
+          <div class="row">
+            <div class="col d-flex justify-content-center p-3">
+              <div class="card" style="width: 40rem;">
+                <div class="card-header">
+                  <strong>Kansas City Chiefs are a Dynasty</strong>
+                  <span>4/12</span>
+                </div>
+                <img src="//i.ebayimg.com/images/g/OJ0AAOSw8dJeSx7x/s-l1200.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"><strong>204 Likes</strong></p>
+                  <p class="card-text">The Kansas City Chiefs will be playing in the superbowl vs the San Francisco 49ers. Patrick Mahomes is my favorite athlete of all time.</p>
+                </div>
+              </div>
+            </div>                
+          </div>
+          <div class="row">
+            <div class="col d-flex justify-content-center p-3">
+              <div class="card" style="width: 40rem;">
+                <div class="card-header">
+                  <strong>Kansas City Chiefs are a Dynasty</strong>
+                  <span>4/12</span>
+                </div>
+                <img src="//i.ebayimg.com/images/g/OJ0AAOSw8dJeSx7x/s-l1200.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"><strong>204 Likes</strong></p>
+                  <p class="card-text">The Kansas City Chiefs will be playing in the superbowl vs the San Francisco 49ers. Patrick Mahomes is my favorite athlete of all time.</p>
+                </div>
+              </div>
+            </div>                
+          </div>
+          <div class="row">
+            <div class="col d-flex justify-content-center p-3">
+              <div class="card" style="width: 40rem;">
+                <div class="card-header">
+                  <strong>Kansas City Chiefs are a Dynasty</strong>
+                  <span>4/12</span>
+                </div>
+                <img src="//i.ebayimg.com/images/g/OJ0AAOSw8dJeSx7x/s-l1200.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"><strong>204 Likes</strong></p>
+                  <p class="card-text">The Kansas City Chiefs will be playing in the superbowl vs the San Francisco 49ers. Patrick Mahomes is my favorite athlete of all time.</p>
+                </div>
+              </div>
+            </div>                
+          </div>
+          <div class="row">
+            <div class="col d-flex justify-content-center p-3">
+              <div class="card" style="width: 40rem;">
+                <div class="card-header">
+                  <strong>Kansas City Chiefs are a Dynasty</strong>
+                  <span>4/12</span>
+                </div>
+                <img src="//i.ebayimg.com/images/g/OJ0AAOSw8dJeSx7x/s-l1200.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"><strong>204 Likes</strong></p>
+                  <p class="card-text">The Kansas City Chiefs will be playing in the superbowl vs the San Francisco 49ers. Patrick Mahomes is my favorite athlete of all time.</p>
+                </div>
+              </div>
+            </div>                
+          </div>
+            
+
+          
+
+
+
+
+
+
+
         </div>
-      </nav>
-      <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"></div>
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"></div>
-      </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div class="row">
+                <div class="col-4">
+                  <img class="img-fluid" src="//i.ebayimg.com/images/g/OJ0AAOSw8dJeSx7x/s-l1200.webp"></div>
+                <div class="col-4">
+                  <img class="img-fluid" src="//i.ebayimg.com/images/g/OJ0AAOSw8dJeSx7x/s-l1200.webp"></div>
+                <div class="col-4">
+                  <img class="img-fluid" src="//i.ebayimg.com/images/g/OJ0AAOSw8dJeSx7x/s-l1200.webp"></div>
+                </div>
+                <div class="row">
+                  <div class="col-4">
+                    <img class="img-fluid" src="//i.ebayimg.com/images/g/OJ0AAOSw8dJeSx7x/s-l1200.webp"></div>
+                  <div class="col-4">
+                    <img class="img-fluid" src="//i.ebayimg.com/images/g/OJ0AAOSw8dJeSx7x/s-l1200.webp"></div>
+                  <div class="col-4">
+                    <img class="img-fluid" src="//i.ebayimg.com/images/g/OJ0AAOSw8dJeSx7x/s-l1200.webp"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-4">
+                      <img class="img-fluid" src="//i.ebayimg.com/images/g/OJ0AAOSw8dJeSx7x/s-l1200.webp"></div>
+                    <div class="col-4">
+                      <img class="img-fluid" src="//i.ebayimg.com/images/g/OJ0AAOSw8dJeSx7x/s-l1200.webp"></div>
+                    <div class="col-4">
+                      <img class="img-fluid" src="//i.ebayimg.com/images/g/OJ0AAOSw8dJeSx7x/s-l1200.webp"></div>
+                    </div>
+          </div>
+      
+
     </div>
     <div class="col-5">
 
